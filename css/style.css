@@ -2,7 +2,23 @@
     margin: 0;
     padding: 0;
 }
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
+}
+
+.section {
+    background-color: cornflowerblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
 .nav-bar {
     width: 100%;
     background-color:dodgerblue;
@@ -33,6 +49,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 20px;
     background-color: dodgerblue;
     color: white;
     text-align: center;

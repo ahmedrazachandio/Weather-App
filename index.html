@@ -2,33 +2,39 @@
 <html lang="en">
     <head>
         <title>Weather App</title>
-        <link rel="icon" type="image/x-icon"  href="./cloud.png" >
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
         
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/mobile.css" media="(max-device-width:450px)">
+        <link rel="stylesheet" href="css/mobile.css" media="(max-device-width:1180px)">
         <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     </head>
     <body>
         <nav class="nav-bar">
             <h1>Weather App</h1>
         </nav>
 
-        <form class="locate">
-            <input type="text" id="location" placeholder="Enter your place name">
-        </form>
-        love what you do
-        A wandering soul
-        no vacancy of girl
-    
+        <section class="card">
+            <form class="locate">
+                <input type="text" id="location" onkeyup="getWeatherData()" placeholder="Enter your place name">
+            </form>
 
-        <footer class="foter">
+            <div id="temp_c"></div>
+            <div id="fahrenheit"></div>
+            <div id="humidity"></div>
+            <div id="feelslike_c"></div>
+            <div id="vis_km"></div>
+            <div id="wind_kph"></div>
 
-            <h1>Developed by Ahmed Raza</h1>
-        </footer>
+            
+        </section>
 
 
 
-
+        
         <!-- Footer -->
         <footer class="page-footer font-small blue footer1">
             <div class="footer-copyright text-center py-3">© 2020 Copyright:
@@ -50,5 +56,5 @@
 
 
     </body>
-    <script src="Js/app.js"></script>
+    <script src="app.js"></script>
 </html>
