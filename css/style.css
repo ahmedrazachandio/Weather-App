@@ -19,10 +19,26 @@
     display: flex;
     justify-content: center;
 }
+.locate>input{
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    border: solid rgb(9, 8, 8) 2px;
 
-.foter{
+}
+
+
+.footer1{
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    background-color:dodgerblue;
+    background-color: dodgerblue;
     color: white;
-    margin-bottom: auto;
+    text-align: center;
+
+}
+.footer1 a{
+    text-decoration: none;
+
 }
