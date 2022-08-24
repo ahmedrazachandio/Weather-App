@@ -10,6 +10,7 @@ function getWeatherData(){
         document.getElementById("feelslike_c").innerText = response.data.current.feelslike_c + "Feelslike ° C ";
         document.getElementById("vis_km").innerText = response.data.current.vis_km + "Visibility KM ";
         document.getElementById("wind_kph").innerText = response.data.current.wind_kph + "Wind Kph";
+        document.getElementById("cloud").innerText = response.data.current.cloud + "Cloud";
 
         wind_kph
     })
